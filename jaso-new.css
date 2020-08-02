@@ -1,0 +1,231 @@
+/* for use with "Mobile" theme */
+@import url("https://fonts.googleapis.com/css2?family=Mansalva&display=swap");
+
+/*  hide nav-brand by deafult */
+.navbar-brand {
+  display: none;
+}
+
+/* footer */
+footer {
+  border-top: none !important;
+  background-color: #222222;
+  color: #999999;
+}
+footer p.credit {
+  font-size: 11px;
+  margin-top: 0.5em;
+}
+
+/* hide entry title*/
+.entry-title {
+  display: none;
+}
+
+/* unify navbar bg color */
+.navbar-ex1-collapse,
+.navbar-ex2-collapse,
+.nav-bar-collapse {
+  background-color: #222222 !important;
+}
+
+/* center navbar menu items*/
+.navbar.navbar-inverse.navbar-fixed-top .container {
+  margin: 0;
+  max-width: 100vw;
+}
+
+/* push all site content down to account for navbar wrap, add background */
+.site-inner {
+  padding-top: 75px;
+  background-image: url("http://jaso.org/images/bkrd.png");
+  background-attachment: fixed;
+  padding-bottom: 6em;
+}
+main {
+  max-width: 700px;
+}
+
+.site-inner .container {
+  background-color: #fff;
+  padding: 3em;
+  border-radius: 15px;
+}
+
+.site-inner .container::before {
+  content: ".";
+  color: #fff;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 200px;
+  width: 100% !important;
+
+  position: relative;
+  text-align: center;
+  background-position: center;
+
+  background-image: url("http://jaso.org/wp-content/uploads/2016/07/JASO-2L.png");
+}
+
+/*
+.navbar {
+  position: static
+} */
+
+/* scrollify-membership chart */
+._membership-chart {
+  min-height: 500px;
+  overflow-x: scroll;
+  min-width: 700px;
+}
+
+/* homepage featured posts carousel */
+#featuredposts-1 {
+  max-width: 100% !important;
+  overflow: hidden;
+}
+.featuredposts-container {
+  max-width: 100% !important;
+}
+#featuredposts-1 .featuredposts-image img {
+  width: auto;
+}
+.featuredposts-excerpt {
+  left: 14px !important;
+  min-height: 124px;
+}
+.featuredposts-excerpt h2 a {
+  font-size: 20px !important;
+}
+/* center featured posts pagination*/
+ul.featuredposts-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.ezcol {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row main {
+  flex: 1;
+  width: 100%;
+}
+
+#black-studio-tinymce-2 .textwidget {
+  display: flex;
+  justify-content: center;
+  margin-right: -1rem;
+}
+
+/* lower positiong of running totla box, membership application */
+#vfbp-running-total {
+  top: 60px !important;
+}
+
+/* larger than tablets */
+@media screen and (min-width: 767px) {
+  /* jaso logo with static navbar */
+  /*
+.site-header .navbar .container::before {
+  content: ".";
+  color: #fff;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 200px;
+  width: 100% !important;
+
+position: relative;
+ text-align: center;
+background-position: center;
+
+  background-image:
+  url('http://jaso.org/wp-content/uploads/2016/07/JASO-2L.png');
+}
+.site-header {
+  background-color: #222222;
+}
+.navbar {
+   position: static;
+}   */
+}
+
+/* between desktop and tablets */
+@media screen and (max-width: 1200px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  #sidebar {
+    width: 100%;
+  }
+  #black-studio-tinymce-2 .textwidget {
+    display: flex;
+    justify-content: center;
+    margin-right: -1rem;
+  }
+  #black-studio-tinymce-2 .textwidget a:first-of-type {
+    margin-right: 1em;
+  }
+}
+
+/* tablets */
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: block;
+    text-transform: uppercase;
+    font-family: Mansalva, sans-serif;
+    font-style: italic;
+  }
+  .site-inner {
+    padding-top: 0px;
+  }
+  .site-inner .container {
+    border-radius: 0;
+  }
+  .featuredposts-excerpt {
+    max-width: calc(100vw - 40px) !important;
+    height: auto !important;
+    padding-right: 24px !important;
+  }
+  #featuredposts-1 {
+    height: 430px !important;
+  }
+  .featuredposts-container　ul.featuredposts-pagination {
+    bottom: 0;
+  }
+  .featuredposts-excerpt h2 {
+    font-size: 14px !important;
+  }
+  .featuredposts-excerpt h2 a {
+    font-size: inherit !important;
+  }
+}
+
+/* phones */
+@media screen and (max-width: 480px) {
+  #black-studio-tinymce-2 .textwidget a:first-of-type {
+    margin-right: 0;
+  }
+
+  .ezcol {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .ezcol a {
+    margin: 2rem;
+  }
+  /* hide featured posts carousel */
+  #featuredposts-1 {
+    display: none;
+  }
+}

@@ -1,0 +1,110 @@
+/* for use with "Mobile" theme */
+
+
+
+/*
+header .container:first-child::before {
+  content: ".";
+  color: #fff;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #fff;
+  width: 90vw;
+  background-image:
+  url('http://jaso.org/wp-content/uploads/2016/07/JASO-2L.png');
+} */
+
+/*
+.navbar {
+  position: static
+} */
+
+/*
+.navbar-brand {
+ background-image:
+  url('http://jaso.org/wp-content/uploads/2016/07/JASO-2L.png');
+  background-size: contain;
+background-repeat: no-repeat;
+color: transparent;
+height: 100px;
+width: 200px;
+}*/
+
+.navbar-brand span {
+  color: transparent;
+}
+
+/*
+header .container{
+  content: ".";
+  height: 100px;
+  background-color: #fff
+  }  */
+
+.navbar-collapse {
+  background-color: #333333;
+}
+
+
+/* hide auto-generated title */
+.entry-header {
+  display: none;
+}
+
+row {
+    display: flex;
+ }
+
+#featuredposts-1 {
+   width: 100vw !impotant;
+}
+
+#featuredposts-1 .featuredposts-container {
+  width: 100% !important;
+}
+
+  #black-studio-tinymce-2 .textwidget {
+  display: flex;
+  justify-content: center;
+  margin-right: -1rem;
+}
+
+
+/* tablets */
+@media screen and (max-width: 800px) {
+/*
+  header .container:first-child::before {
+  content: ".";
+  color: #fff;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}  */
+   .row {
+      display: flex;
+      flex-direction: column;
+   }
+   #sidebar {
+     width: 100%
+   }
+    #black-studio-tinymce-2 .textwidget {
+      display: flex;
+      justify-content: center;
+      margin-right: -1rem;
+    }
+   #black-studio-tinymce-2 .textwidget
+   a:first-of-type {
+     margin-right: 1em;
+   }
+
+}
+
+/* phones */
+@media screen and (max-width: 480px) {
+  #black-studio-tinymce-2 .textwidget
+   a:first-of-type {
+     margin-right: 0;
+   }
+
+}
