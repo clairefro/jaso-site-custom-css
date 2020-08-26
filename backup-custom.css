@@ -1,0 +1,110 @@
+/*
+File:			custom.css
+Description:	Custom styles for Thesis
+More Info:		http://diythemes.com/thesis/rtfm/custom-css/
+*/
+
+body.custom {
+  background: url("http://jaso.org/images/bkrd.png") #fff;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/*   MENU   */
+
+.custom a {
+  text-transform: none;
+  text-decoration: none;
+}
+
+.custom a {
+  color: #e13a27;
+}
+
+.custom a:hover {
+  color: #666;
+}
+
+.custom .menu a {
+  border-right: 1px dotted #e13a27;
+  letter-spacing: 0px;
+  color: #999;
+  background-color: transparent;
+}
+
+.custom .menu a:hover {
+  border-right: 1px solid #e13a27;
+  letter-spacing: 0px;
+  color: #e13a27;
+  background-color: transparent;
+}
+
+.custom .menu li ul {
+  color: #000;
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: normal;
+  opacity: 0.95;
+}
+
+.custom .menu li ul a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+custom #nav_area .page {
+  background: transparent;
+}
+
+.custom .menu {
+  background-color: transparent;
+  margin-left: 3px;
+  font-size: 12.5px;
+  text-transform: uppercase;
+}
+
+/*  DIV STYLES  */
+
+.custom #page {
+  background-color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.custom #content_box {
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.custom .menu-menu-container {
+  background-color: #000;
+}
+
+/*   FONT STYLES  */
+.custom h1 {
+  padding-bottom: 25px;
+  padding-top: 25px;
+  color: #e13a27;
+  font-size: 26px;
+}
+.custom h2 {
+  margin-bottom: 15px;
+  margin-top: 2px;
+  padding-top: 15px;
+  color: #e13a27;
+  font-size: 22px;
+  font-weight: lighter;
+}
+.custom h3 {
+  border-bottom: 1px #000 dotted;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0px;
+}
